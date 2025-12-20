@@ -17,10 +17,19 @@
     ```
 
 ### Running using UV
+
 Just run this from root folder `ActCheck/`:
 
 ```powershell
-uv run python -m tests.test_binary
+uv run -m tests.test_binary
+```
+
+### Running `pytest` using UV
+
+Run this from root folder `ActCheck/`:
+
+```powershell
+uv run pytest tests
 ```
 
 Running any test is just running the Python file as a module, hence the `-m`. The `__init__.py` file existing in the `tests/` folder usually works for most errors.

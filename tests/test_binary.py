@@ -7,7 +7,8 @@ import numpy as np
 def check_binary(x):  # Will cross-check results against this function, might not be consistent like this everywhere
     return np.where(x>=0, 1, 0)
 
-if __name__=='__main__':
+# if __name__=='__main__':
+def test_binary():
     values = np.array([
         0,
         -100,
@@ -19,6 +20,6 @@ if __name__=='__main__':
     test = binary(values)  # values from imported function
 
     # When using pytest later, we will use this statement.
-    # assert test == actual
+    assert all(test == actual)
     
-    print(test == actual)
+    # print(test == actual)
