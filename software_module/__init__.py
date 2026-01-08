@@ -5,3 +5,4 @@ from .sigmoid import sigmoid
 from .gelu import gelu
 from .sgelu import sgelu
 from .calu import calu
+from .relu import relu
